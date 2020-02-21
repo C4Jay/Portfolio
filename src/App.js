@@ -37,7 +37,7 @@ class App extends Component {
     
         </Content>
                 <Footer size="mini" className="footer">
-    <FooterSection type="left" logo="Title">
+    <FooterSection className="foot" type="middle" logo="C4J">
         <FooterLinkList>
             <a href="/">Help</a>
             <a href="/">Privacy & Terms</a>
