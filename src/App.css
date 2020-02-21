@@ -110,3 +110,50 @@
   position: relative;
   text-align: center;
 }
+
+
+.projects-grid {
+  display: flex;
+}
+
+.onecard {
+  float: left;
+  padding: 1px;
+  margin-left: 20px;
+}
+
+.contact {
+  margin: auto;
+  background: grey;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.contact-grid {
+  text-align: center;
+  width: 80%;
+  justify-content: center;
+  height: 619px;
+  background: white;
+  color: black;
+  border: 1px solid yellow;
+  margin-bottom: 20px;
+}
+
+.contact-grid p{
+  font-family: 'Oxygen','Sans-Serif';
+  font-weight: bolder;
+}
+
+.contact-grid h1{
+  font-family: 'Anton','Sans-Serif';
+}
+
+.contact-grid hr{
+  border-top: 6px dotted black;
+  width: 50%;
+  margin: auto;
+}

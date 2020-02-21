@@ -10,7 +10,11 @@ class Projects extends Component {
     toggleCategories() {
         if(this.state.activeTab === 0) {
         return(
-            
+
+            <div className="projects-grid">
+
+            <div>
+            <div className="onecard">
             <Card shadow={5} style={{minWidth: 450, margin: 'auto'}}>
             <CardTitle style={{color: 'black', height: '176px', background: 'url(https://colorlib.com/wp/wp-content/uploads/sites/2/react-dev-tools-logo.jpg) center / cover'}}>React Project number1</CardTitle>
             <CardText>
@@ -23,6 +27,40 @@ class Projects extends Component {
             <CardMenu style={{color: 'efff'}}>
             <IconButton name="share"></IconButton></CardMenu>
             </Card>
+            </div>
+
+          <div className="onecard">        
+           <Card shadow={5} style={{minWidth: 450, margin: 'auto'}}>
+          <CardTitle style={{color: 'black', height: '176px', background: 'url(https://colorlib.com/wp/wp-content/uploads/sites/2/react-dev-tools-logo.jpg) center / cover'}}>React Project number1</CardTitle>
+          <CardText>
+          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+         </CardText>
+          <CardActions border>
+          <Button colored>GitHub</Button>
+          <Button colored>LiveDemo</Button>
+         </CardActions>
+         <CardMenu style={{color: 'efff'}}>
+        <IconButton name="share"></IconButton></CardMenu>
+        </Card>
+         </div>
+
+         <div className="onecard">  
+           <Card shadow={5} style={{minWidth: 450, margin: 'auto'}}>
+            <CardTitle style={{color: 'black', height: '176px', background: 'url(https://colorlib.com/wp/wp-content/uploads/sites/2/react-dev-tools-logo.jpg) center / cover'}}>React Project number1</CardTitle>
+            <CardText>
+             industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </CardText>
+            <CardActions border>
+            <Button colored>GitHub</Button>
+            <Button colored>LiveDemo</Button>
+            </CardActions>
+            <CardMenu style={{color: 'efff'}}>
+            <IconButton name="share"></IconButton></CardMenu>
+            </Card>
+            </div>
+            </div>
+
+            </div>
 
         )
         
@@ -56,15 +94,13 @@ class Projects extends Component {
 
             </Tabs>
 
-            <section className="projects-grid">
-            <Grid className="projects-grid">
+            <Grid>
             <Cell col={12}>
             <div className="content">
             {this.toggleCategories()}</div>
             </Cell>
             </Grid>
             
-            </section>
             </div>
         )
     }
