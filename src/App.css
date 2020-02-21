@@ -139,7 +139,8 @@
   height: 619px;
   color: black;
   margin-bottom: 20px;
-  background: white
+  background: white;
+  position: relative;
 
 }
 
@@ -164,3 +165,7 @@
 
 }
 
+.resume-right-col {
+  background: #27221F;
+  color: white;
+}
