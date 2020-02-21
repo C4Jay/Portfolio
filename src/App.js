@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
+import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList} from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 
@@ -34,7 +34,16 @@ class App extends Component {
         <Content>
             <div className="page-content" />
             <Main/>
+    
         </Content>
+                <Footer size="mini" className="footer">
+    <FooterSection type="left" logo="Title">
+        <FooterLinkList>
+            <a href="/">Help</a>
+            <a href="/">Privacy & Terms</a>
+        </FooterLinkList>
+    </FooterSection>
+</Footer>
     </Layout>
 </div>
 
