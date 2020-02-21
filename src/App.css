@@ -162,10 +162,17 @@
 .contact-list i{
   font-size: 40px;
   padding-right: 5rem;
+  
 
 }
 
 .resume-right-col {
   background: #27221F;
   color: white;
+  padding: 1em;
+}
+
+.resume-left-col {
+  font-family: 'Oxygen';
+  font-weight: bold;
 }

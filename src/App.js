@@ -11,19 +11,17 @@ class App extends Component {
    
 <div className="demo-big-content">
     <Layout>
-        <Header title="Portfolio" scroll className="header-color">
+        <Header title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Portfolio</Link>} scroll className="header-color">
             <Navigation>
                 
-            <Link to="/">Home</Link>
                 <Link to="/resume">Resume</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/aboutme">AboutMe</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
-        <Drawer title="Portfolio">
+        <Drawer title={<Link style={{textDecoration: 'none', color: 'grey'}} to="/">Portfolio</Link>}>
             <Navigation>
-            <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/aboutme">AboutMe</Link>
